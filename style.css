@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    max-width: 1500px;
+    padding: 0 32px;
+    margin: 0 90px;
+}
+
+nav{
+    background-color: darkblue;
+}
+nav .container{
+    align-items: center;
+}
+.nav__start_bootsrap{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.nav__start_bootsrap a{
+    color: white;
+    font-weight: 900;
+    font-size:30px;
+    margin: 20px 0;
+}
+
+.nav__menu ul{
+    color: white;
+    gap: 30px;
+}
+
+.nav__menu button{
+    display: none;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10%;
+    background-color: aquamarine;
+}
+
+.nav__menu__portfolio{
+    background-color: #1db8a0;
+    border-radius: 10%;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav__menu ul{
+        display: none;
+    }
+    .nav__menu button{
+        display: block;
+    }
+}
+
+.main__section__icon{
+    padding: 50px 0;
+    background-color: #1db8a0;
+    width: 100%;
+    min-height: 600px;
+}
+.main__section__icon .container{
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.main__section__icon .container *{
+    color: white;
+    
+}
+.main__icon{
+    height: 300px;
+    width: 300px;
+    left: 35%;
+    bottom: 45%;
+}
+
+.main__start_bootstrap{
+    font-size: 50px;
+    text-align: center;
+}
+
+.main__text ul{
+    font-size: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main__section__portfolio .container{
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 60px;
+}
+.main__section__portfolio #text-container{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.main__section__portfolio #text-container *{
+    margin: 5px auto;
+}
+.main__section__text{
+    font-size: 30px;
+}
+.main__section__portfolio #images-container{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main__section__portfolio #images-container div {
+    width: calc((100% - 60px) / 3);
+
+    align-content: center;
+}
+
+.main__section__portfolio #images-container div img {
+    width: 100%;
+    object-fit: cover;
+}
+@media only screen and (max-width: 1200px) {
+    .main__section__portfolio #images-container div{
+        width: calc((100% - 40px) / 2);
+    }
+    .main__section__portfolio .container{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .main__section__portfolio #images-container div {
+        width: calc((100% - 40px));
+    }
+    .main__section__portfolio .container{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+.main__section__about{
+    background-color: #1db8a0;
+}
+
+.main__section__about .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 0;
+}
+.main__section__about__ABOUT{
+    color: white;
+    font-size: 50px;
+}
+.main__section__about__star img{
+    width: 400px;
+}
+.main__section__about__paragraph{
+    color: white;
+    font-size: 30px;
+    width: 80%;
+}
+
+.main__section__about__paragraph p{
+    text-align: center;
+   margin-bottom: 30px;
+}
+
+.main__section__about__button button{
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10%;
+    background-color: aquamarine;
+}
+
+.main__section__about__button button *{
+    margin: 10px;
+}
+
+.main__contact_me__form .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 0;
+}
+form{
+    flex-direction: column;
+    
+}
+form *{
+    height: 50px;
+}
